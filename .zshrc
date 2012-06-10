@@ -25,7 +25,6 @@ if [[ -r .aliases ]]; then
 fi
 
 # Other options
-
 # automatically use 'cd' if you enter a directory name
 setopt AUTO_CD
 # automatically replace cd by pushd to always use directory stack
@@ -34,5 +33,5 @@ setopt AUTO_PUSHD
 setopt NO_BEEP
 # fancy globbing
 setopt EXTENDED_GLOB
-# attempt to correct mess ups in commands
+# attempt to correct mess-ups in commands
 setopt CORRECT
