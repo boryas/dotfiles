@@ -11,13 +11,18 @@ bindkey -e
 
 # Completion
 zstyle :compinstall filename '/home/boris/.zshrc'
-autoload -Uz compinit 
-compinit
+autoload -Uz compinit && compinit
 
 # Prompt
-PS1='%n@%M:%~
-'
+autoload -U colors && colors
+PS1="%B%{$fg[green]%}%n@%M%{$reset_color%}:%{$fg[blue]%}%~%{$reset_color%}%b
+"
 RPS1='%w %t'
+
+# Load aliases
+if [[ -r .aliases ]]; then
+    . ~/.aliases
+fi
 
 # Other options
 
@@ -25,3 +30,9 @@ RPS1='%w %t'
 setopt AUTO_CD
 # automatically replace cd by pushd to always use directory stack
 setopt AUTO_PUSHD
+# no beeping!
+setopt NO_BEEP
+# fancy globbing
+setopt EXTENDED_GLOB
+# attempt to correct mess ups in commands
+setopt CORRECT
