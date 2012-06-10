@@ -23,5 +23,3 @@ alias wifi='sudo wifi-select wlan0'
 
 # Temporary cup alias for compilers
 alias cup='java -jar java-cup-11a.jar'
-
-alias keys='keychain --eval --agents ssh --nogui -Q -q ~/.ssh/id_rsa'

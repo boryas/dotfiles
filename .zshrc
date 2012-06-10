@@ -24,6 +24,9 @@ if [[ -r .aliases ]]; then
     . ~/.aliases
 fi
 
+# start keychain at startup
+eval `keychain --eval --agents ssh --nogui -Q -q ~/.ssh/id_rsa`
+
 # Other options
 # automatically use 'cd' if you enter a directory name
 setopt AUTO_CD
