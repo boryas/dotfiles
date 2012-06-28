@@ -16,7 +16,7 @@ autoload -Uz compinit && compinit
 # Prompt
 autoload -U colors && colors
 PS1="%B%{$fg[green]%}%n@%M%{$reset_color%}:%{$fg[blue]%}%~%{$reset_color%}%b
-"
+$"
 RPS1='%w %t'
 
 # Load aliases
