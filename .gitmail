@@ -1,0 +1,5 @@
+[sendemail]
+        from = "Boris Burkov <boris@bur.io>"
+        smtpserver = "/usr/bin/msmtp"
+        aliasesfile = "/home/borisb/.mailrc"
+        aliasfiletype = "mailrc"

@@ -21,9 +21,9 @@ msgwait 1
 msgminwait 1
 #
 ## 12-hour time
-hardstatus alwayslastline "%{k}%-w%{.kY}%n %t%{-}%+w %= %H: %l %d/%m %C%a"
+#hardstatus alwayslastline "%{k}%-w%{.kY}%n %t%{-}%+w %= %H: %l %d/%m %C%a"
 ## 24-hour time
-#hardstatus alwayslastline "%{k}%-w%{.kY}%n %t%{-}%+w %= %H: %l %d/%m %c"
+hardstatus alwayslastline "%{k}%-w%{.kY}%n %t%{-}%+w %= %H: %l %d/%m %c"
 #
 ## When splitting windows, set the inactive splits' captions background to grey.
 ## (Replace the 'K' with another color or Remove the '%:' if you want to reverse the logic.)
