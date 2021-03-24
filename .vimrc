@@ -1,4 +1,3 @@
-set t_Co=256
 set autoindent
 filetype indent on
 filetype plugin on
@@ -45,7 +44,44 @@ map <C-K> :pyf /usr/local/share/clang/clang-format.py<CR>
 imap <C-K> <ESC>:pyf /usr/local/share/clang/clang-format.py<CR>i
 
 " linux formatting
-let g:linuxsty_patterns = [ "/linux/", "/btrfs-progs/", "/xfstests/" ]
+let g:linuxsty_patterns = [ "/linux/", "/kernel/", "/btrfs-progs/", "/linux-mm/", "/fb-linux-5.2/", "/xfstests/", "/libbpf-bootstrap/", "/simoop/" ]
 
-" latex
-let g:tex_flavor='latex'
+" color
+set background=dark
+let g:gruvbox_italicize_comments = '0'
+colorscheme gruvbox
+hi! link Comment GruvboxBlue
+hi! link String GruvboxPurple
+"hi! link Type GruvboxGreen
+let g:cpp_member_highlight = '1'
+let g:cpp_simple_highlight = '1'
+
+" airline
+let g:airline_theme = 'gruvbox'
+let g:airline_powerline_fonts = 1
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+
+" unicode symbols
+let g:airline_left_sep = '»'
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '«'
+let g:airline_right_sep = '◀'
+let g:airline_symbols.linenr = '␊'
+let g:airline_symbols.linenr = '␤'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.paste = 'Þ'
+let g:airline_symbols.paste = '∥'
+let g:airline_symbols.whitespace = 'Ξ'
+
+" airline symbols
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_symbols.branch = ''
+let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = ''
