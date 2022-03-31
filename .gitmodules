@@ -1,0 +1,33 @@
+[submodule ".vim/pack/plugins/start/gruvbox"]
+	path = .vim/pack/plugins/start/gruvbox
+	url = https://github.com/morhetz/gruvbox.git
+[submodule ".vim/pack/plugins/start/haskell-vim"]
+	path = .vim/pack/plugins/start/haskell-vim
+	url = https://github.com/neovimhaskell/haskell-vim.git
+[submodule ".vim/pack/plugins/start/rust.vim"]
+	path = .vim/pack/plugins/start/rust.vim
+	url = https://github.com/rust-lang/rust.vim
+[submodule ".vim/pack/plugins/start/CHANGELOG.md"]
+	path = .vim/pack/plugins/start/CHANGELOG.md
+	url = https://github.com/morhetz/gruvbox.git
+[submodule ".vim/pack/plugins/README.md"]
+	path = .vim/pack/plugins/README.md
+	url = https://github.com/boryas/dotfiles.git
+[submodule ".vim/pack/autoload"]
+	path = .vim/pack/autoload
+	url = https://github.com/boryas/dotfiles.git
+[submodule ".vim/colors"]
+	path = .vim/colors
+	url = https://github.com/boryas/dotfiles.git
+[submodule "gruvbox_256palette.sh"]
+	path = gruvbox_256palette.sh
+	url = https://github.com/boryas/dotfiles.git
+[submodule ".vim/pack/plugins/start/vim-airline"]
+	path = .vim/pack/plugins/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline
+[submodule ".vim/pack/plugins/start/vim-airline-themes"]
+	path = .vim/pack/plugins/start/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes
+[submodule ".vim/pack/plugins/start/vim-cpp-modern"]
+	path = .vim/pack/plugins/start/vim-cpp-modern
+	url = https://github.com/bfrg/vim-cpp-modern
