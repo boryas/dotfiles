@@ -1,0 +1,4 @@
+alias btrfs linux-btrfs@vger.kernel.org
+alias fscrypt linux-fscrypt@vger.kernel.org
+alias fstests fstests@vger.kernel.org
+alias team kernel-team@fb.com
