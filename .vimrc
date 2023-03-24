@@ -44,10 +44,21 @@ imap <C-K> <ESC>:pyf /usr/local/share/clang/clang-format.py<CR>i
 " linux formatting
 " let g:linuxsty_patterns = [ "/linux/", "/kernel/", "/btrfs-progs/", "/linux-mm/", "/fb-linux-5.2/", "/xfstests/", "/libbpf-bootstrap/", "/simoop/" ]
 
+" plugged
+call plug#begin()
+Plug 'prabirshrestha/vim-lsp'
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
+Plug 'mattn/vim-lsp-settings'
+Plug 'morhetz/gruvbox'
+Plug 'vim-airline/vim-airline'
+call plug#end()
+
+colorscheme gruvbox
+
 " color
 set background=dark
 let g:gruvbox_italicize_comments = '0'
-colorscheme gruvbox
 hi! link Comment GruvboxBlue
 hi! link String GruvboxPurple
 "hi! link Type GruvboxGreen
@@ -83,14 +94,6 @@ let g:airline_right_alt_sep = ''
 let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
-
-" plugged
-call plug#begin()
-Plug 'prabirshrestha/vim-lsp'
-Plug 'prabirshrestha/asyncomplete.vim'
-Plug 'prabirshrestha/asyncomplete-lsp.vim'
-Plug 'mattn/vim-lsp-settings'
-call plug#end()
 
 " LSP stuff
 function! s:on_lsp_buffer_enabled() abort
